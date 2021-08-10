@@ -964,7 +964,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F32 lerp(F32 x, F32 y, F32 s) { return x + s * (y - x); }
+        public static F32 lerp(F32 a, F32 b, F32 s) { return a + s * (b - a); }
 
         /// <summary>Returns the result of a componentwise linear I32erpolating from x to y using the I32erpolation parameter s.</summary>
         /// <remarks>
@@ -975,7 +975,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The componentwise I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F32x2 lerp(F32x2 x, F32x2 y, F32 s) { return x + s * (y - x); }
+        public static F32x2 lerp(F32x2 a, F32x2 b, F32 s) { return a + s * (b - a); }
 
         /// <summary>Returns the result of a componentwise linear I32erpolating from x to y using the I32erpolation parameter s.</summary>
         /// <remarks>
@@ -986,7 +986,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The componentwise I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F32x3 lerp(F32x3 x, F32x3 y, F32 s) { return x + s * (y - x); }
+        public static F32x3 lerp(F32x3 a, F32x3 b, F32 s) { return a + s * (b - a); }
 
         /// <summary>Returns the result of a componentwise linear I32erpolating from x to y using the I32erpolation parameter s.</summary>
         /// <remarks>
@@ -997,7 +997,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The componentwise I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F32x4 lerp(F32x4 x, F32x4 y, F32 s) { return x + s * (y - x); }
+        public static F32x4 lerp(F32x4 a, F32x4 b, F32 s) { return a + s * (b - a); }
 
 
         /// <summary>Returns the result of a componentwise linear I32erpolating from x to y using the corresponding components of the I32erpolation parameter s.</summary>
@@ -1009,7 +1009,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The componentwise I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F32x2 lerp(F32x2 x, F32x2 y, F32x2 s) { return x + s * (y - x); }
+        public static F32x2 lerp(F32x2 a, F32x2 b, F32x2 s) { return a + s * (b - a); }
 
         /// <summary>Returns the result of a componentwise linear I32erpolating from x to y using the corresponding components of the I32erpolation parameter s.</summary>
         /// <remarks>
@@ -1020,7 +1020,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The componentwise I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F32x3 lerp(F32x3 x, F32x3 y, F32x3 s) { return x + s * (y - x); }
+        public static F32x3 lerp(F32x3 a, F32x3 b, F32x3 s) { return a + s * (b - a); }
 
         /// <summary>Returns the result of a componentwise linear I32erpolating from x to y using the corresponding components of the I32erpolation parameter s.</summary>
         /// <remarks>
@@ -1031,7 +1031,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The componentwise I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F32x4 lerp(F32x4 x, F32x4 y, F32x4 s) { return x + s * (y - x); }
+        public static F32x4 lerp(F32x4 a, F32x4 b, F32x4 s) { return a + s * (b - a); }
 
 
         /// <summary>Returns the result of linearly I32erpolating from x to y using the I32erpolation parameter s.</summary>
@@ -1043,7 +1043,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F64 lerp(F64 x, F64 y, F64 s) { return x + s * (y - x); }
+        public static F64 lerp(F64 a, F64 b, F64 s) { return a + s * (b - a); }
 
         /// <summary>Returns the result of a componentwise linear I32erpolating from x to y using the I32erpolation parameter s.</summary>
         /// <remarks>
@@ -1054,7 +1054,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The componentwise I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F64x2 lerp(F64x2 x, F64x2 y, F64 s) { return x + s * (y - x); }
+        public static F64x2 lerp(F64x2 a, F64x2 b, F64 s) { return a + s * (b - a); }
 
         /// <summary>Returns the result of a componentwise linear I32erpolating from x to y using the I32erpolation parameter s.</summary>
         /// <remarks>
@@ -1065,7 +1065,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The componentwise I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F64x3 lerp(F64x3 x, F64x3 y, F64 s) { return x + s * (y - x); }
+        public static F64x3 lerp(F64x3 a, F64x3 b, F64 s) { return a + s * (b - a); }
 
         /// <summary>Returns the result of a componentwise linear I32erpolating from x to y using the I32erpolation parameter s.</summary>
         /// <remarks>
@@ -1076,7 +1076,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The componentwise I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F64x4 lerp(F64x4 x, F64x4 y, F64 s) { return x + s * (y - x); }
+        public static F64x4 lerp(F64x4 a, F64x4 b, F64 s) { return a + s * (b - a); }
 
 
         /// <summary>Returns the result of a componentwise linear I32erpolating from x to y using the corresponding components of the I32erpolation parameter s.</summary>
@@ -1088,7 +1088,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The componentwise I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F64x2 lerp(F64x2 x, F64x2 y, F64x2 s) { return x + s * (y - x); }
+        public static F64x2 lerp(F64x2 a, F64x2 b, F64x2 s) { return a + s * (b - a); }
 
         /// <summary>Returns the result of a componentwise linear I32erpolating from x to y using the corresponding components of the I32erpolation parameter s.</summary>
         /// <remarks>
@@ -1099,7 +1099,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The componentwise I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F64x3 lerp(F64x3 x, F64x3 y, F64x3 s) { return x + s * (y - x); }
+        public static F64x3 lerp(F64x3 a, F64x3 b, F64x3 s) { return a + s * (b - a); }
 
         /// <summary>Returns the result of a componentwise linear I32erpolating from x to y using the corresponding components of the I32erpolation parameter s.</summary>
         /// <remarks>
@@ -1110,7 +1110,7 @@ namespace CGTK.Utilities.BetterMath
         /// <param name="s">The I32erpolation parameter. May be a value outside the I32erval [0, 1].</param>
         /// <returns>The componentwise I32erpolation from x to y.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static F64x4 lerp(F64x4 x, F64x4 y, F64x4 s) { return x + s * (y - x); }
+        public static F64x4 lerp(F64x4 a, F64x4 b, F64x4 s) { return a + s * (b - a); }
 
 
         /// <summary>Returns the result of normalizing a F32ing poI32 value x to a range [a, b]. The opposite of lerp. Equivalent to (x - a) / (b - a).</summary>
